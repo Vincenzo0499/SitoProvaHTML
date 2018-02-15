@@ -50,7 +50,7 @@ td
 
 .orario
 {
-	background-color: blue;
+	border-bottom-color:  blue;
 	text-align: center;
 	font-size: 20px;
 }
