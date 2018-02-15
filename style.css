@@ -47,3 +47,10 @@ td
 {
 	width: 150px;
 }
+
+.orario
+{
+	background-color: blue;
+	text-align: center;
+	font-size: 20px;
+}
