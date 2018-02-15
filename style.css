@@ -1,0 +1,49 @@
+body
+{
+	background-color: #e4e4e4;
+}
+
+h1
+{
+	text-align: center;
+	color: blue;
+}
+
+table
+{
+	padding-top: 60px;
+	height: 50px;
+}
+
+td
+{
+	text-align: center;
+	width: 100px;
+	border: 2px solid black;
+}
+
+.container
+{
+	width: 700px;
+	margin: 0px auto;
+	padding-top: 50px;
+}
+
+.video
+{
+	width: 560px;
+	margin: 0px auto;
+	padding-top: 50px;
+}
+
+.form
+{
+	width: 15 0px;
+	margin: 0px auto;
+	padding-top: 40px;
+}
+
+.in
+{
+	width: 150px;
+}
