@@ -3,10 +3,12 @@
 <head>
 	<title>Prova1</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
 </head>
 <body>
 	<h1>Pagina 5</h1>
-	<table align="center">
+	<table align="center" class="table">
 		<tr>
 			<td><a href="index.html">Pagina Home</a></td>
 			<td><a href="2.html">Pagina 2</a></td>
@@ -17,14 +19,78 @@
 	</table>
 	
 	<div class="container">
-		<p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		</p>
+		<p align="center">	Seleziona operazione </p>
+		<div class="row">
+			<div class="col-md-3" align="center">
+				<button type="button" name="somma" onclick="somma()">Somma</button>
+			</div>			
+			<div class="col-md-3" align="center">
+				<button type="button" name="sottrazione" onclick="sottrazione()">Sottrazione</button>
+			</div>	
+			<div class="col-md-3" align="center">
+				<button type="button" name="sottrazione" onclick="moltiplicazione()">Moltiplicazione</button>
+			</div>	
+			<div class="col-md-3" align="center">
+				<button type="button" name="sottrazione" onclick="divisione()">Divisione</button>
+			</div>	
+		</div>
 	</div>
 	
+	<script>
+	function somma()
+	{
+
+			var x;
+			var y;
+			var sum;
+			x = window.prompt("Inserisci numero 1: ");
+			y = window.prompt("Inserisci numero 2: ");
+			x = x*1;
+			y = y*1;
+			sum = x+y;
+			window.alert("Somma= " +sum);
+		
+	}
+
+	function sottrazione()
+	{
+		var x;
+		var y;
+		var res;
+		x = window.prompt("Inserisci numero 1: ");
+		y = window.prompt("Inserisci numero 2: ");
+		x = x*1;
+		y = y*1;
+		res = x - y;
+		window.alert("Il resto è= " +res);
+	}
+
+	function moltiplicazione()
+	{
+		var x;
+		var y;
+		var prod;
+		x = window.prompt("Inserisci numero 1: ");
+		y = window.prompt("Inserisci numero 2: ");
+		x = x*1;
+		y = y*1;
+		prod = x * y;
+		window.alert("Il prodotto è= " +prod);
+	}
+
+	function divisione()
+	{
+		var x;
+		var y;
+		var prod;
+		x = window.prompt("Inserisci numero 1: ");
+		y = window.prompt("Inserisci numero 2: ");
+		x = x*1;
+		y = y*1;
+		quo = x / y;
+		window.alert("Il quoziente è= " +quo);
+	}	
+	</script>
+
 </body>
 </html>
